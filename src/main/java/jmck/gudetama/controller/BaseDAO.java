@@ -1,20 +1,14 @@
 package jmck.gudetama.controller;
 
-public class BaseDAO<T>
+public abstract class BaseDAO<T>
 {
 
-	public void delete(T object)
-	{}
+	public abstract void delete(T object);
 
-	public T find(int id)
-	{
-		return null;
-	}
+	public abstract T find(int id);
 
-	public void merge(T object)
-	{}
+	public abstract void merge(T object);
 
-	public void persist(T object)
-	{}
+	public abstract void persist(T object);
 
 }
