@@ -2,6 +2,7 @@
     <wb-module deploy-name="Gudetama-JMCK">
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <property name="java-output-path" value="/Gudetama-JMCK/build/classes"/>
         <property name="context-root" value="gudetama"/>
     </wb-module>
