@@ -1,5 +1,6 @@
 package jmck.gudetama.model;
 
+
 import java.util.ArrayList;
 
 public class Arc
@@ -33,6 +34,7 @@ public class Arc
 
 	public String getName() {
 		return name;
+
 	}
 
 	public void setName(String name) {
