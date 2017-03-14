@@ -1,20 +1,27 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 7 mars 2017 20:19:28 by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated 14 mars 2017 21:20:19 by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
     <class name="jmck.gudetama.model.User" table="USER">
         <id name="id" type="int">
-            <column name="id" />
+            <column name="ID" />
             <generator class="assigned" />
         </id>
-        <property name="name" column="name" type="string"/>
-        <property name="password" column="password" type="string"/>
-        <property name="email" column="email" type="string"/>
-        <property name="role" column="role" type="byte"/>
-        <property name="wantsNotify" column="wantsNotify" type="byte"/>
-        <property name="email" column="email" type="string"/>
-        <property name="favourites" column="favourites" type="string"/>
-        
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="role" type="byte">
+            <column name="ROLE" />
+        </property>
+        <property name="wantsNotify" type="byte">
+            <column name="WANTSNOTIFY" />
+        </property>
     </class>
 </hibernate-mapping>

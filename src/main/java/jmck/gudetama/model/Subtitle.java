@@ -6,18 +6,21 @@ public class Subtitle {
 	
 	int id;
 	String url;
-	Language language;
-	User user;
-	Video video;
-	// maybe add a arraylist<note> 
+	//Language language;
+	int languageId;
+	//User user;
+	int userId;
+	//Video video;
+	int videoId;
 	
 	
-	public Subtitle(int ident, String lien, Language langue, User utilisateur,Video vid){
+	
+	public Subtitle(int ident, String lien, int langue, int utilisateur,int vid){
 		this.id = ident;
 		this.url=lien;
-		this.language=langue;
-		this.user=utilisateur;
-		this.video=vid;
+		this.languageId=langue;
+		this.userId=utilisateur;
+		this.videoId=vid;
 		
 		
 	}
@@ -43,33 +46,33 @@ public class Subtitle {
 	}
 
 
-	public Language getLanguage() {
-		return language;
+	public int getLanguageId() {
+		return languageId;
 	}
 
 
-	public void setLanguage(Language language) {
-		this.language = language;
+	public void setLanguageId(int language) {
+		this.languageId = language;
 	}
 
 
-	public User getUser() {
-		return user;
+	public int getUserId() {
+		return userId;
 	}
 
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserId(int user) {
+		this.userId = user;
 	}
 
 
-	public Video getVideo() {
-		return video;
+	public int getVideoId() {
+		return videoId;
 	}
 
 
-	public void setVideo(Video video) {
-		this.video = video;
+	public void setVideoId(int video) {
+		this.videoId = video;
 	}
 	
 	

@@ -7,17 +7,17 @@ public class Video {
 	String name_japanese;
 	String name_english;
 	String url;
-	Arc arc;//un episode apartient a un arc
+	int arcId;//un episode apartient a un arc
 	
 	
 	
-	public Video(int ident, int epis, String jap,String eng,String lien,Arc season){
+	public Video(int ident, int epis, String jap,String eng,String lien,int season){
 		this.id = ident;
 		this.episode = epis;
 		this.name_japanese = jap;
 		this.name_english = eng;
 		this.url = lien;
-		this.arc = season;
+		this.arcId = season;
 	}
 
 
@@ -82,14 +82,14 @@ public class Video {
 
 
 
-	public Arc getArc() {
-		return arc;
+	public int getArcId() {
+		return arcId;
 	}
 
 
 
-	public void setArc(Arc arc) {
-		this.arc = arc;
+	public void setArcId(int arc) {
+		this.arcId = arc;
 	}
 	
 	
