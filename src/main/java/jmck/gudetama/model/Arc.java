@@ -1,35 +1,45 @@
 package jmck.gudetama.model;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name="Arc")
+import java.util.ArrayList;
+
 public class Arc
 {
+	int id;
+	String name;
+	// maybe   ArrayList<Video> videos; // on associe plusieur videos a un arc
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer id;
-	private String name;
-
-	public Integer getId()
-	{
-		return this.id;
+	public  Arc(int num, String chaine/*,ArrayList<Video> videolist*/ ){
+		
+		this.id = num;
+		this.name = chaine;
+		//this.videos = videolist;
 	}
 
-	public String getName()
-	{
-		return this.name;
+	/*public ArrayList<Video> getVideos() {
+		return videos;
 	}
 
-	public void setId(Integer id)
-	{
+	public void setVideos(ArrayList<Video> videos) {
+		this.videos = videos;
+	}*/
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public void setName(String name)
-	{
-		this.name = name;
+	public String getName() {
+		return name;
+
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
 }
