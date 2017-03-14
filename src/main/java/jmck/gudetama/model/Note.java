@@ -5,14 +5,15 @@ public class Note {
 	
 	
 	byte note;
-	Subtitle subtitle;//une note est attribuée a un sous titre
-	User user;//une note vient d'un utilisateur
+	//Subtitle subtitle;//une note est attribuée a un sous titre
+	int subtitleId;
+	int userId;//une note vient d'un utilisateur
 	
 	
-	public Note(byte num, Subtitle sub, User utilisateur){
+	public Note(byte num, int sub, int utilisateur){
 		this.note = num;
-		this.subtitle = sub;
-		this.user= utilisateur;
+		this.subtitleId = sub;
+		this.userId= utilisateur;
 	}
 
 
@@ -26,23 +27,23 @@ public class Note {
 	}
 
 
-	public Subtitle getSubtitle() {
-		return subtitle;
+	public int getSubtitleId() {
+		return subtitleId;
 	}
 
 
-	public void setSubtitle(Subtitle subtitle) {
-		this.subtitle = subtitle;
+	public void setSubtitleId(int subtitle) {
+		this.subtitleId = subtitle;
 	}
 
 
-	public User getUser() {
-		return user;
+	public int getUserId() {
+		return userId;
 	}
 
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUser(int user) {
+		this.userId = user;
 	}
 	
 	

@@ -6,28 +6,28 @@ import java.io.Serializable;
 // Classe censée faire fonctionner la clé composée de Note
 public class NoteId implements Serializable {
 
-	private Subtitle subtitle;
-	private  User user;
+	private int subtitleId;
+	private  int userId;
 	
-	public NoteId(Subtitle soustitre , User utilisateur){
-		this.subtitle = soustitre;
-		this.user = utilisateur;
+	public NoteId(int soustitre , int utilisateur){
+		this.subtitleId = soustitre;
+		this.userId = utilisateur;
 	}
 
-	public Subtitle getSubtitle() {
-		return subtitle;
+	public int getSubtitleId() {
+		return subtitleId;
 	}
 
-	public void setSubtitle(Subtitle subtitle) {
-		this.subtitle = subtitle;
+	public void setSubtitleId(int subtitle) {
+		this.subtitleId = subtitle;
 	}
 
-	public User getUser() {
-		return user;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserId(int user) {
+		this.userId = user;
 	}
 	
 	@Override
@@ -35,15 +35,15 @@ public class NoteId implements Serializable {
 		if(arg0==null)return false;
 		if(!(arg0 instanceof NoteId))return false;
 		NoteId arg1 = (NoteId) arg0;
-		return (this.subtitle.getId()==arg1.getSubtitle().getId())&&
-				(this.user.getId() == arg1.getUser().getId());
+		return (this.subtitleId==arg1.getSubtitleId())&&
+				(this.userId == arg1.getUserId());
 	}
 	
 	@Override
 	public int hashCode(){
 		int hsCode;
-		hsCode = subtitle.hashCode();
-		hsCode = 19 * hsCode+ user.hashCode();
+		hsCode = subtitleId;
+		hsCode = 19 * hsCode+ userId;
 		return hsCode;
 	}
 	

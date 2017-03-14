@@ -3,22 +3,16 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 14 mars 2017 21:20:19 by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="jmck.gudetama.model.Subtitle" table="SUBTITLE">
+    <class name="jmck.gudetama.model.Favourite" table="FAVOURITE">
         <id name="id" type="int">
             <column name="ID" />
             <generator class="assigned" />
         </id>
-        <property name="url" type="java.lang.String">
-            <column name="URL" />
-        </property>
-        <property name="languageId" type="int">
-            <column name="LANGUAGEID" />
+        <property name="videoId" type="int">
+            <column name="VIDEOID" />
         </property>
         <property name="userId" type="int">
             <column name="USERID" />
-        </property>
-        <property name="videoId" type="int">
-            <column name="VIDEOID" />
         </property>
     </class>
 </hibernate-mapping>

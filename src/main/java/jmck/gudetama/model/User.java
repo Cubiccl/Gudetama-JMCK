@@ -11,7 +11,7 @@ public class User {
 	String email;
 	byte role;
 	byte wantsNotify;
-	ArrayList<Video> favourites; // liste des videos en favoris
+	//ArrayList<Video> favourites; // liste des videos en favoris
 	
 	public User(int ident, String nom,String mdp, String mail,byte rol,byte notif){
 		
@@ -21,18 +21,18 @@ public class User {
 		this.email = mail;
 		this.role= rol;
 		this.wantsNotify = notif;
-		this.favourites =null;
+		//this.favourites =null;
 		
 		
 	}
 
-	public ArrayList<Video> getFavourites() {
+	/*public ArrayList<Video> getFavourites() {
 		return favourites;
-	}
+	}*/
 
-	public void setFavourites(ArrayList<Video> favourites) {
+	/*public void setFavourites(ArrayList<Video> favourites) {
 		this.favourites = favourites;
-	}
+	}*/
 
 	public int getId() {
 		return id;
